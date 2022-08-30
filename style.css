@@ -13,11 +13,20 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 100%);
     opacity: 0;
     transition: 1s;
     text-align: center;
     line-height: 100vh;
+  }
+  @media screen and (max-width: 800px) {
+    .contents {
+      transform: translate(-50%, -50%);
+    }
+  }
+  @media screen and (min-width: 801px) {
+    .contents {
+      transform: translate(-50%, 100%);
+    }
   }
   
   .page1 { background-color: #e9dfc4;}
