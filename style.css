@@ -9,7 +9,6 @@ body {
   }
   .contents {
     width: 100%;
-    height: 100vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,15 +16,18 @@ body {
     transition: 1s;
     text-align: center;
     line-height: 100vh;
+    overflow: hidden;
   }
   @media screen and (max-width: 800px) {
     .contents {
       transform: translate(-50%, -50%);
+      height: 100%;
     }
   }
   @media screen and (min-width: 801px) {
     .contents {
       transform: translate(-50%, 100%);
+      height: 100vh;
     }
   }
   
@@ -52,6 +54,8 @@ body {
     display: grid;
     place-items: center;
     height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 .img-div {
     display: flex;
